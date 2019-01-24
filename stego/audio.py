@@ -18,8 +18,8 @@ def spectrogram(f):
     proc = (
         ffmpeg.input(f)
         .filter('showspectrumpic', s=size, mode='separate')
-        .output(path)
+        .output(path, hide_banner=None, v=0)
         .overwrite_output()
-        .run_async(quiet=True)
+        .run_async()
     )
     return proc

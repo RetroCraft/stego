@@ -14,7 +14,7 @@ def cli():
 def youtube(url):
     f = stego.youtube.download(url)
     # pass off to video handler function
-    video(f)
+    stego.video.process(f)
 
 
 @cli.command()
