@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import click
+import stego.audio
 import stego.video
 import stego.youtube
 
@@ -21,6 +22,12 @@ def youtube(url):
 @click.argument('filename', type=click.Path(exists=True))
 def video(filename):
     stego.video.process(filename)
+
+
+@cli.command()
+@click.argument('filename', type=click.Path(exists=True))
+def audio(filename):
+    stego.audio.process(filename)
 
 
 if __name__ == '__main__':

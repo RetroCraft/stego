@@ -23,3 +23,10 @@ def spectrogram(f):
         .run_async()
     )
     return proc
+
+
+def process(filename):
+    spectro = spectrogram(filename)
+
+    spectro.wait()
+    print('[a|spectrogram] done.')
