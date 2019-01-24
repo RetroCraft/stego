@@ -8,7 +8,8 @@ setup(
     install_requires=[
         'Click',
         'ffmpeg-python',
-        'youtube-dl'
+        'youtube-dl',
+        'filetype',
     ],
     entry_points='''
         [console_scripts]

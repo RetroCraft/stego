@@ -1,1 +1,1 @@
-__all__ = ["audio", "video", "youtube"]
+__all__ = ["audio", "image", "video", "youtube"]

@@ -20,7 +20,6 @@ def download(url):
         'logger': YDLLogger(),
     }
     with youtube_dl.YoutubeDL(ydl_opts) as ydl:
-        print('[y|download] beginning download...')
         info_dict = ydl.extract_info(url)
         video_title = info_dict.get('title', None)
         filename = '%s.mkv' % video_title
