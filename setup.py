@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='stegtools',
+    name='stego',
     version='0.1',
     packages=find_packages(),
     include_package_data=True,
@@ -10,6 +10,7 @@ setup(
         'ffmpeg-python',
         'youtube-dl',
         'filetype',
+        'requests',
     ],
     entry_points='''
         [console_scripts]
